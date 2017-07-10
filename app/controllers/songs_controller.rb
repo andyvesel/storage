@@ -1,5 +1,5 @@
 class SongsController < ApplicationController
   def index
-    @songs = Dir.entries('/home/andy/projects/storage/public/')
+    @songs = Dir.glob("#{Rails.root}/app/assets/audio/*")
   end
 end

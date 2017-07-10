@@ -1,3 +1,6 @@
 <h2>Listen to Song</h2>  
 
-<%= @songs.each { |song| song } %>
+<% @songs.each do |song| %> 
+	<audio src="<%= audio_path(song) %>" controls></audio>
+<% end %>
+	<audio src="/home/andy/dev/storage/app/assets/audio/moonminer.mp3" controls></audio>
